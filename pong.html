@@ -30,17 +30,6 @@ function moveEverything() {
   }
   if(ballX < 0) {
     ballSpeedX = -ballSpeedX;
-}
-
-function drawEverything() {
-    colorRect(0,0,canvas.width,canvas.height,'black');
-
-    colorRect(0,210,10,100,'white');
-
-    canvasContext.fillStyle = 'white';
-    canvasContext.beginPath();
-    canvasContext.arc(ballX,50,10,0,Math.PI*2,true);
-    canvasContext.fill();
   }
 
 function colorRect(leftX,topY, width, height, drawColor) {
